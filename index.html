@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--
   Author: Vitalii Kondratiuk
@@ -10,53 +9,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Vitalii Kondratiuk">
-
     <title>The Human Exchange | Vitalii Kondratiuk</title>
 
+    <!-- my background: #101419 -->
     <style>
         body {
-            background-color: #0b1d3a;
-            color: #f2f2f2;
+            background-color: #101419;
+            color: #e8edf2;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 35px 25px;
+        }
+
+        h1 { font-size: 44px; margin-bottom: 5px; }
+        h2 { color: #b8c3ce; font-size: 23px; font-weight: normal; }
+        h3 { margin-top: 35px; }
+        p { max-width: 750px; }
+
+        img {
+            width: 650px;
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        ul { list-style: none; padding: 0; }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 15px 0;
+            border-bottom: 1px solid #343c45;
+        }
+
+        .price { font-family: monospace; white-space: nowrap; }
+        .up { color: #36c98f; }
+        .down { color: #ed6875; }
+
+        footer {
+            color: #91a0ae;
+            font-size: 13px;
+            margin-top: 35px;
         }
     </style>
 </head>
 
 <body>
+<main>
     <h1>THE HUMAN EXCHANGE</h1>
     <h2>The Price of a Normal Day</h2>
 
     <p>
-        What if the stock market traded things like
-        <strong>sleep, free time and focus</strong>
-        instead of companies? That's the idea behind
-        The Human Exchange. The prices aren't real,
-        but the choices are pretty familiar.
+        Some things don't have a price tag, but I still end up
+        trading them. If I stay up to finish an assignment,
+        I lose sleep. If I go out with friends, that's time
+        I could've spent studying.
     </p>
 
     <img src="hourglass.png"
-     alt="Glass hourglass with falling sand on a dark background"
-     width="600">
+         alt="Glass hourglass with falling sand and green and red lighting">
 
     <p>
-        College students make these trades all the time.
-        Staying up late to finish an assignment might mean
-        <em>two less hours of sleep</em>.
-        And sometimes a free Friday afternoon feels
-        more valuable than money.
+        So I made a fictional stock market for
+        <strong>sleep, free time, focus, energy and social life</strong>.
+        The numbers aren't real, but
+        <em>the choices behind them are</em>.
     </p>
 
-    <h2>Human Assets</h2>
+    <h3>Human Assets</h3>
 
     <ul>
-        <li>SLP - Sleep: down 4.6% during exam week.</li>
-        <li>FOC - Focus: down 3.2% after too many browser tabs.</li>
-        <li>TIM - Free Time: up 1.9% as Friday gets closer.</li>
-        <li>ENG - Energy: down 1.1% after a long week.</li>
-        <li>SOC - Social Life: up 2.7% over the weekend.</li>
+        <li>
+            <span>TIM - Free Time</span>
+            <span class="price">164.20 HX <span class="up">+6.1%</span></span>
+        </li>
+        <li>
+            <span>SLP - Sleep</span>
+            <span class="price">132.80 HX <span class="up">+4.8%</span></span>
+        </li>
+        <li>
+            <span>FOC - Focus</span>
+            <span class="price">118.40 HX <span class="up">+2.3%</span></span>
+        </li>
+        <li>
+            <span>ENG - Energy</span>
+            <span class="price">78.60 HX <span class="down">-3.1%</span></span>
+        </li>
+        <li>
+            <span>SOC - Social Life</span>
+            <span class="price">87.30 HX <span class="down">-3.4%</span></span>
+        </li>
     </ul>
 
-    <p>All market data is fictional.</p>
-
-    <p>Built by Vitalii Kondratiuk &middot; BMIS 235</p>
+    <footer>
+        <p>THE HUMAN EXCHANGE / FICTIONAL MARKET</p>
+        <p>Built by Vitalii Kondratiuk &middot; BMIS 235</p>
+    </footer>
+</main>
 </body>
 </html>
