@@ -9,6 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Vitalii Kondratiuk">
+
     <title>The Human Exchange | Vitalii Kondratiuk</title>
 
     <!-- my background: #101419 -->
@@ -17,52 +18,32 @@
             background-color: #101419;
             color: #e8edf2;
             font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
             line-height: 1.6;
-            margin: 0;
         }
-
-        main {
-            max-width: 1100px;
-            margin: auto;
-            padding: 35px 25px;
-        }
-
-        h1 { font-size: 44px; margin-bottom: 5px; }
-        h2 { color: #b8c3ce; font-size: 23px; font-weight: normal; }
-        h3 { margin-top: 35px; }
-        p { max-width: 750px; }
 
         img {
-            width: 650px;
+            width: 600px;
             max-width: 100%;
-            height: auto;
-            margin: 20px 0;
         }
-
-        ul { list-style: none; padding: 0; }
 
         li {
-            display: flex;
-            justify-content: space-between;
-            gap: 15px;
-            padding: 15px 0;
-            border-bottom: 1px solid #343c45;
+            margin-bottom: 12px;
         }
 
-        .price { font-family: monospace; white-space: nowrap; }
-        .up { color: #36c98f; }
-        .down { color: #ed6875; }
+        .up {
+            color: #36c98f;
+        }
 
-        footer {
-            color: #91a0ae;
-            font-size: 13px;
-            margin-top: 35px;
+        .down {
+            color: #ed6875;
         }
     </style>
 </head>
 
 <body>
-<main>
     <h1>THE HUMAN EXCHANGE</h1>
     <h2>The Price of a Normal Day</h2>
 
@@ -83,35 +64,16 @@
         <em>the choices behind them are</em>.
     </p>
 
-    <h3>Human Assets</h3>
+    <h2>Human Assets</h2>
 
     <ul>
-        <li>
-            <span>TIM - Free Time</span>
-            <span class="price">164.20 HX <span class="up">+6.1%</span></span>
-        </li>
-        <li>
-            <span>SLP - Sleep</span>
-            <span class="price">132.80 HX <span class="up">+4.8%</span></span>
-        </li>
-        <li>
-            <span>FOC - Focus</span>
-            <span class="price">118.40 HX <span class="up">+2.3%</span></span>
-        </li>
-        <li>
-            <span>ENG - Energy</span>
-            <span class="price">78.60 HX <span class="down">-3.1%</span></span>
-        </li>
-        <li>
-            <span>SOC - Social Life</span>
-            <span class="price">87.30 HX <span class="down">-3.4%</span></span>
-        </li>
+        <li>Free Time (TIM): 164.20 HX <span class="up">+6.1%</span></li>
+        <li>Sleep (SLP): 132.80 HX <span class="up">+4.8%</span></li>
+        <li>Focus (FOC): 118.40 HX <span class="up">+2.3%</span></li>
+        <li>Energy (ENG): 78.60 HX <span class="down">-3.1%</span></li>
+        <li>Social Life (SOC): 87.30 HX <span class="down">-3.4%</span></li>
     </ul>
 
-    <footer>
-        <p>THE HUMAN EXCHANGE / FICTIONAL MARKET</p>
-        <p>Built by Vitalii Kondratiuk &middot; BMIS 235</p>
-    </footer>
-</main>
+    <p>Built by Vitalii Kondratiuk &middot; BMIS 235</p>
 </body>
 </html>
